@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Quiz and Report Dashboard</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+    h1 { text-align: center; }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #0078d4;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<h1>Quiz and Report Dashboard</h1>
+<input id="searchInput" onkeyup="filterTable()" placeholder="Search for topics..." type="text"/>
+<table id="dashboardTable">
+<thead>
+<tr>
+<th>Topic</th>
+<th>Quiz</th>
+<th>Report</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.1 Making Prospect an Applicant</td>
+<td><a href="https://forms.office.com/r/2Ti8bUX9Hw" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.1%20Making%20Prospect%20an%20Applicant.xlsx?d=w72d1a45d301d469d98e3279f8aa5d286&amp;csf=1&amp;web=1&amp;e=W1GSCQ" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.2 Offer Unit &amp; Respond to Offer</td>
+<td><a href="https://forms.office.com/r/eP50rdwmYN" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.2%20Offer%20Unit%20%26%20Respond%20to%20Offer.xlsx?d=w4175a9470b984f3abd26fbae6343c545&amp;csf=1&amp;web=1&amp;e=qBvVO5" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.3 Complete or Retro Active Move In</td>
+<td><a href="https://forms.office.com/r/93SQVfWb9T" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.3%20Complete%20or%20Retro%20Active%20Move%20In.xlsx?d=w7df60df5592143a58e5d7ceccd247cc8&amp;csf=1&amp;web=1&amp;e=XdZhbo" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.4 Sending Notices to Re-certify</td>
+<td><a href="https://forms.office.com/r/GG110bgg3q" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.4%20Sending%20Notices%20to%20Re-certify.xlsx?d=wd6a680a85ef54743a9bc746b6be502f5&amp;csf=1&amp;web=1&amp;e=4FNVDy" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.5 Post Scheduled Billing</td>
+<td><a href="https://forms.office.com/r/kBT3FxfvTg" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.5%20Post%20Scheduled%20Billing.xlsx?d=w7db98d2f7f51478cb18174da089877ab&amp;csf=1&amp;web=1&amp;e=lTtDmm" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.6 Close/ Post Bank Deposit</td>
+<td><a href="https://forms.office.com/r/queCxeWgf5" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.6%20Close_%20Post%20Bank%20Deposit.xlsx?d=wdd2d1dee97fc4c38a05e5a6bef1c5a28&amp;csf=1&amp;web=1&amp;e=c2C2HW" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.7 Delinquent and Prepaid</td>
+<td><a href="https://forms.office.com/r/AkUS2F6FxG" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.7%20Delinquent%20and%20Prepaid.xlsx?d=w7071c111456d426fbd8783c8dda338ac&amp;csf=1&amp;web=1&amp;e=bXhTZp" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.8 Special Claims and Misc Ad</td>
+<td><a href="https://forms.office.com/r/emnXPUfNDn" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.8%20Special%20Claims%20and%20Misc%20Ad.xlsx?d=w9c5f0708efd0434f921de1d4c3aca95f&amp;csf=1&amp;web=1&amp;e=h4laT1" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.8.1 Repayment Agreement</td>
+<td><a href="https://forms.office.com/r/aisrhXRUBY" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.8.1%20Repayment%20Agreement.xlsx?d=wd4c3cf2988a04de7a906ef42191ca69f&amp;csf=1&amp;web=1&amp;e=n581sK" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.9 Generating HAP Vouchers</td>
+<td><a href="https://forms.office.com/r/dcYyd3dkTH" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.9%20Generating%20HAP%20Vouchers.xlsx?d=w522bed4d9eec40d28d357fbc61b9daae&amp;csf=1&amp;web=1&amp;e=Rx50BT" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.10 Voucher Reconciliation</td>
+<td><a href="https://forms.office.com/r/4xj1vWqWCH" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.10%20Voucher%20Reconciliation.xlsx?d=we40fda7d39fa4110bef29da5a28146bb&amp;csf=1&amp;web=1&amp;e=7XaP1b" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.11 Hap Requests,Special Claims, EIR</td>
+<td><a href="https://forms.office.com/r/DmtfkBN9UX" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.11%20Hap%20Requests,%20Special%20Claims,%20EIR.xlsx?d=wea4db0c3a720451798aafb7be8d793b4&amp;csf=1&amp;web=1&amp;e=m6m4B2" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.13 Posting Payments in Bulk (QPP)</td>
+<td><a href="https://forms.office.com/r/uj3buXPzUe" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.14%20Posting%20Payments%20in%20Bulk.xlsx?d=w8230ec786ffa49aeac610fad432cba41&amp;csf=1&amp;web=1&amp;e=DQd2Vy" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.14.1 (Posting HAP vouchers)</td>
+<td><a href="https://forms.office.com/r/yFJ8mR7LEz" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.14.1%20(Posting%20HAP%20vouchers).xlsx?d=w6232f4b72d5a4d91b5f7a9a0e1bde0bf&amp;csf=1&amp;web=1&amp;e=4brQ17" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.14.2 (Posting Project Worksheet)</td>
+<td><a href="https://forms.office.com/r/y18uwcwDnB" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.14.2%20Posting%20Project%20Worksheet.xlsx?d=w834424c1109d4df49be4a793838a5510&amp;csf=1&amp;web=1&amp;e=HnCu8N" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.15 Process a Certification</td>
+<td><a href="https://forms.office.com/r/ee1F2brqpd" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.15%20Process%20a%20Certification.xlsx?d=wd001b4c6ed024f1cb43a23fc6490d555&amp;csf=1&amp;web=1&amp;e=0kAd8C" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.16 Delete HUD Certs</td>
+<td><a href="https://forms.office.com/r/4Nhue6Zypq" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.16%20Delete%20HUD%20Certs.xlsx?d=w13710a9fd0ef45b697ab8b2eaf9a0ebb&amp;csf=1&amp;web=1&amp;e=PQhjgm" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.17 Correct Edit Delete Certification</td>
+<td><a href="https://forms.office.com/r/FcqAzZwmiv" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.17%20Correct%20Edit%20Delete%20Certification.xlsx?d=w8eee0ea4e4384624a43056e00fbb7ed5&amp;csf=1&amp;web=1&amp;e=xJSIGI" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.18 (Generating EIV report)</td>
+<td><a href="https://forms.office.com/r/tuMPF9dxvT" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.18%20Generating%20EIV%20Report.xlsx?d=wc60634bed18b47e1aff03422bff5f755&amp;csf=1&amp;web=1&amp;e=ERWbU5" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>2.19 GTOL/LTOL</td>
+<td><a href="https://forms.office.com/r/zGVQBJ6W5L" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/2.19%20GTOL_LTOL.xlsx?d=w5358ceb9c39b431788f84e6db5d96e12&amp;csf=1&amp;web=1&amp;e=xYqYHu" target="_blank">Report</a></td>
+</tr>
+<tr>
+<td>Gross Rent Change</td>
+<td><a href="https://forms.office.com/r/LST2decHAX" target="_blank">Quiz</a></td>
+<td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/Gross%20Rent%20Change.xlsx?d=w8e3f1eb15c47490cac16a779ad660c3a&amp;csf=1&amp;web=1&amp;e=EdMpVN" target="_blank">Report</a></td>
+</tr>
+<tr><td>Navigating Onesite</td><td><a href="https://forms.office.com/r/WPQHMzjnqY" target="_blank">Quiz</a></td><td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/Navigating%20Onesite.xlsx?d=w0db14a2a81c1476a9c8d6d0d96b67533&amp;csf=1&amp;web=1&amp;e=qZeYqE" target="_blank">Report</a></td></tr><tr><td>Unified Platform</td><td><a href="https://forms.office.com/r/icdu9xtZ6v" target="_blank">Quiz</a></td><td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/Unified%20Platform.xlsx?d=wfa9186675a3f4a3ab2b9db21d7c98416&amp;csf=1&amp;web=1&amp;e=CgaTPR" target="_blank">Report</a></td></tr><tr><td>Client Portal</td><td><a href="https://forms.office.com/r/mV7EpnzKkt" target="_blank">Quiz</a></td><td><a href="https://realpage-my.sharepoint.com/:x:/r/personal/emelita_pedida_realpage_com/Documents/Client%20Portal.xlsx?d=wa2b524b6e5f041e999601473e503d03f&amp;csf=1&amp;web=1&amp;e=q5ZwYJ" target="_blank">Report</a></td></tr></tbody>
+</table>
+<script>
+function filterTable() {
+  var input = document.getElementById("searchInput");
+  var filter = input.value.toLowerCase();
+  var rows = document.querySelectorAll("#dashboardTable tbody tr");
+  rows.forEach(row => {
+    var topic = row.cells[0].textContent.toLowerCase();
+    row.style.display = topic.includes(filter) ? "" : "none";
+  });
+}
+</script>
+</body>
+</html>
